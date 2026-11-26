@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111827">
-  <meta name="description" content="The personal page of veloxx11.">
-  <title>veloxx11 — GitHub</title>
+  <title>veloxx11</title>
+  <h1>hello!</h1>
+  <h2> welcome to the best website you'll ever see :P  </h2>
   <style>
     :root {
       color-scheme: dark;
@@ -13,90 +14,28 @@
       background: #111827;
       color: #f9fafb;
     }
-    * { box-sizing: border-box; }
-    body {
-      min-height: 100vh;
-      margin: 0;
-      display: grid;
-      place-items: center;
-      padding: 2rem 1rem;
-      background: radial-gradient(ellipse at top, #1f3a5b 0, #111827 55%);
-    }
-    main {
-      width: min(100%, 620px);
-      padding: clamp(1.5rem, 5vw, 3rem);
-      border: 1px solid #374151;
-      border-radius: 20px;
-      background: rgb(17 24 39 / 88%);
-      box-shadow: 0 24px 70px rgb(0 0 0 / 30%);
-    }
-    .eyebrow { color: #93c5fd; font-size: .9rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-    h1 { margin: .5rem 0; font-size: clamp(2.2rem, 8vw, 3.5rem); line-height: 1.05; }
-    p { color: #cbd5e1; line-height: 1.6; }
-    .buttons { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0 2rem; }
-    a.button, button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: .7rem 1rem;
-      border: 1px solid #60a5fa;
-      border-radius: 10px;
-      background: #2563eb;
-      color: white;
-      font: inherit;
-      font-weight: 650;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    a.button.secondary { border-color: #4b5563; background: #1f2937; }
-    a.button:hover, button:hover { filter: brightness(1.12); }
-    h2 { margin: 0 0 .4rem; font-size: 1.25rem; }
-    label { display: block; margin: 1rem 0 .4rem; font-weight: 600; }
-    input, textarea {
-      width: 100%;
-      padding: .8rem;
-      border: 1px solid #4b5563;
-      border-radius: 9px;
-      background: #0b1220;
-      color: #f9fafb;
-      font: inherit;
-    }
-    textarea { min-height: 130px; resize: vertical; }
-    input:focus, textarea:focus, a:focus-visible, button:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
-    form button { margin-top: 1rem; }
-    .note { margin-top: .65rem; font-size: .85rem; color: #9ca3af; }
   </style>
 </head>
+
 <body>
-  <main>
-    <div class="eyebrow">Hello, I'm</div>
-    <h1>veloxx11</h1>
-    <p>Welcome to my little corner of the internet. Find me on GitHub or send me a message below.</p>
-
-    <nav class="buttons" aria-label="Links">
-      <a class="button" href="https://github.com/veloxx11" target="_blank" rel="noopener noreferrer">My GitHub</a>
-      <a class="button secondary" href="https://github.com/veloxx11/veloxx11.github.io" target="_blank" rel="noopener noreferrer">This website's code</a>
-    </nav>
-
-    <section aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Send me a message</h2>
+<section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">send me a message</h2>
       <form action="https://formspree.io/f/xjywlzar" method="POST">
         <input type="hidden" name="_subject" value="New message from your website">
 
-        <label for="name">Your name</label>
+        <label for="name">who are you </label>
         <input id="name" name="name" type="text" autocomplete="name" required>
 
-        <label for="reply-email">Your email (optional)</label>
+        <label for="reply-email">your email (optional)</label>
         <input id="reply-email" name="_replyto" type="email" autocomplete="email">
 
-        <label for="message">Message</label>
+        <label for="message">type here</label>
         <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Send message</button>
+        <button type="submit">send message</button>
       </form>
-      <p class="note">Your email address is not displayed on this page. Messages are sent through Formspree.</p>
+      <p class="note">messages sent through formspree</p>
     </section>
-  </main>
 </body>
+
 </html>
